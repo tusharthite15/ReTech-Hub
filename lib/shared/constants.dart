@@ -6,7 +6,7 @@ class Constants {
   static String messagingSenderId = "553227468261";
   static String projectId = "fir-chat-22219";
 
-  final primaryColor = const Color(0xfff5553c);
-// final secondColor = const Color(0xff08364d);
+   final primaryColor = const Color(0xfff5553c);
+   final secondColor = const Color(0xff08364d);
 
 }

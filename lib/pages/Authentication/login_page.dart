@@ -29,7 +29,7 @@ class _LoginPageState extends State<LoginPage> {
         child: Padding(
           padding: const EdgeInsets.symmetric(
             horizontal: 20,
-            vertical: 30,
+            vertical: 50,
           ),
           child: Form(
             key: formKey,
@@ -51,11 +51,9 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
                 Image.asset(
-                  "asset/landing_page_image.jpg", // Updated image
+                  "asset/technical-Campus_logo.jpg", // Updated image
                 ),
-                const SizedBox(
-                  height: 10,
-                ),
+SizedBox(height: 30),
                 TextFormField(
                   decoration: textInputDecoration.copyWith(
                     labelText: "Email",

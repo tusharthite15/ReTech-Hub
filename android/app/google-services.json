@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1071203264200",
+    "project_id": "tech-resale",
+    "storage_bucket": "tech-resale.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071203264200:android:53700b1917cf5e877167fd",
+        "android_client_info": {
+          "package_name": "com.example.oa_drawer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC-tgzcIqggMNoxe3HEM9dilOgFBakzDE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
