@@ -15,6 +15,7 @@ class _oa_drawerState extends State<oa_drawer> {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: LoginPage(), // Call your LoginPage here
 
     );
