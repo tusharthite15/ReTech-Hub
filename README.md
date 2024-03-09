@@ -14,3 +14,5 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+# ReTech-Hub
+ReTech Hub is a Flutter application designed to facilitate the resale of old technical accessories within a college community. The app serves as a marketplace where users can buy and sell vintage tech gadgets, accessories, and equipment.
