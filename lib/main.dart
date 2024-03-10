@@ -1,23 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:oa_drawer/pages/Authentication/login_page.dart';
+import 'package:oa_drawer/ui/login_screen.dart'; // Import your login screen here
 
 void main() {
-  runApp(const oa_drawer());
-}
-class oa_drawer extends StatefulWidget {
-  const oa_drawer({Key? key}) : super(key: key);
-
-  @override
-  State<oa_drawer> createState() => _oa_drawerState();
+  runApp(MyApp());
 }
 
-class _oa_drawerState extends State<oa_drawer> {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: LoginPage(), // Call your LoginPage here
-
+    return MaterialApp(
+      title: 'Re-tech Hub',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: LoginScreen(),
     );
   }
 }

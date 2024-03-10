@@ -14,7 +14,6 @@ class _RegistrationPageState extends State<RegistrationPage> {
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
   String email = "";
   String password = "";
-  String reEnteredPassword = "";
   final bool _isLoading = false;
 
   @override
@@ -40,7 +39,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                   fit: BoxFit.contain,
                 ),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 1),
               const Text(
                 "Create an Account",
                 style: TextStyle(
@@ -58,6 +57,34 @@ class _RegistrationPageState extends State<RegistrationPage> {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 20),
+              TextFormField(
+                decoration: InputDecoration(
+                  labelText: "Full Name",
+                  prefixIcon: Icon(
+                    Icons.person,
+                    color: Theme.of(context).primaryColor,
+                  ),
+                  border: OutlineInputBorder(),
+
+                ),
+                // for name validation
+                validator: (val) {
+                  if (val!.isNotEmpty) {
+                    return null;
+                  } else {
+                    return "Name can't be empty";
+                  }
+                },
+                onChanged: (val) {
+                  setState(() {
+                    var fullName = val;
+                    print(fullName);
+                  });
+                },
+              ),
+
+              const SizedBox(height: 15),
+
               TextFormField(
                 decoration: InputDecoration(
                   labelText: "Email",
@@ -105,29 +132,19 @@ class _RegistrationPageState extends State<RegistrationPage> {
                   });
                 },
               ),
-              const SizedBox(height: 10),
-              TextFormField(
-                obscureText: true,
-                decoration: InputDecoration(
-                  labelText: "Re-enter Password",
-                  prefixIcon: Icon(
-                    Icons.lock,
-                    color: Theme.of(context).primaryColor,
-                  ),
-                  border: OutlineInputBorder(),
-                ),
-                validator: (val) {
-                  if (val!.isEmpty || val != password) {
-                    return "Passwords do not match";
-                  }
-                  return null;
-                },
-                onChanged: (val) {
-                  setState(() {
-                    reEnteredPassword = val;
-                  });
-                },
-              ),
+              // TextFormField(
+              //   obscureText: true,
+              //   decoration: InputDecoration(
+              //     labelText: "Re-enter Password",
+              //     prefixIcon: Icon(
+              //       Icons.lock,
+              //       color: Theme.of(context).primaryColor,
+              //     ),
+              //     border: OutlineInputBorder(),
+              //
+              //
+              //   ),
+              // )
               const SizedBox(height: 20),
               SizedBox(
                 width: double.infinity,
